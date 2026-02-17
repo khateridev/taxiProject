@@ -1,32 +1,80 @@
 /* css reset */
-body{
-    margin:0;
+body {
+  margin: 0;
 }
 
 /* General Styles */
-.container{
-    width: 1170px;
-    margin:0 auto;
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+a,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins Bold", sans-serif;
+    color: rgb(71, 71, 71);
 }
 
+i{
+    color: rgb(71, 71, 71);
+}
 
 /* Header Start */
-#header{
-    width: 100%;
+#header {
+  width: 100%;
 }
-#nav{
+#nav {
+  display: inline-block;
+}
+#nav > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#nav > ul > li {
+  display: inline-block;
+}
+#nav a {
+  color: rgb(46, 46, 46);
+  text-decoration: none;
+}
+
+
+/* CallNow START */
+#callNow{
     display: inline-block;
 }
-#nav > ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-#nav > ul > li{
+
+#callNow div{
     display: inline-block;
+    vertical-align: middle;
 }
-#nav a{
-    color:black;
-    text-decoration: none;
-    font-family: arial;
+
+#callNow i{
+    background-color: #ffd201;
+    line-height: 0;
+    display: inline-block;
+    padding: 10px;
+    vertical-align: middle;
+    border-radius: 50px;
+    font-size:28px
+}
+
+#callNow span{
+    display: block;
+}
+
+#callNow span:first-of-type{
+    font-size:16px
+}
+
+#callNow span:last-of-type{
+    font-size:20px;
+    font-weight: 900;
 }
