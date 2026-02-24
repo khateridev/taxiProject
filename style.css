@@ -7,7 +7,6 @@ body {
 .container {
   width: 1170px;
   margin: 0 auto;
-  background-color: rgba(0, 0, 255, 0.115);
 }
 a,
 p,
@@ -18,65 +17,92 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Poppins Bold", sans-serif;
-    color: rgb(71, 71, 71);
+  font-family: "Poppins Bold", sans-serif;
+  color: rgb(71, 71, 71);
 }
 
-i{
-    color: rgb(71, 71, 71);
+i {
+  color: rgb(71, 71, 71);
 }
 
 /* Header Start */
 #header {
   width: 100%;
-  background-color: rgba(255, 0, 0, 0.08);
+  margin-top: 35px;
 }
+#header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #nav {
   display: inline-block;
+  width: 45%;
+  margin-left: 130px;
 }
 #nav > ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 #nav > ul > li {
   display: inline-block;
+  border-bottom: 5px solid #ffd00100;
 }
+#nav > ul > li:hover {
+  border-bottom: 5px solid #ffd201;
+}
+
+#nav > ul > li:hover a {
+  color: #ffd201;
+}
+
 #nav a {
   color: rgb(46, 46, 46);
   text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 0;
+  display: inline-block;
 }
-
 
 /* CallNow START */
-#callNow{
-    display: inline-block;
+#callNow {
+  display: inline-block;
 }
 
-#callNow div{
-    display: inline-block;
-    vertical-align: middle;
+#callNow div {
+  display: inline-block;
+  vertical-align: middle;
 }
 
-#callNow i{
-    background-color: #ffd201;
-    line-height: 0;
-    display: inline-block;
-    padding: 10px;
-    vertical-align: middle;
-    border-radius: 50px;
-    font-size:28px
+#callNow i {
+  background-color: #ffd201;
+  line-height: 0;
+  display: inline-block;
+  padding: 10px;
+  vertical-align: middle;
+  border-radius: 50px;
+  font-size: 28px;
+  margin-right: 10px;
 }
 
-#callNow span{
-    display: block;
+#callNow span {
+  display: block;
 }
 
-#callNow span:first-of-type{
-    font-size:16px
+/* Callnow text */
+#callNow span:first-of-type {
+  font-size: 14px;
+  font-weight: 500;
 }
 
-#callNow span:last-of-type{
-    font-size:20px;
-    font-weight: 900;
+/* Shomare */
+#callNow span:last-of-type {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
 }
