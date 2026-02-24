@@ -7,6 +7,7 @@ body {
 .container {
   width: 1170px;
   margin: 0 auto;
+  background-color: rgba(0, 0, 255, 0.115);
 }
 a,
 p,
@@ -28,6 +29,7 @@ i{
 /* Header Start */
 #header {
   width: 100%;
+  background-color: rgba(255, 0, 0, 0.08);
 }
 #nav {
   display: inline-block;
